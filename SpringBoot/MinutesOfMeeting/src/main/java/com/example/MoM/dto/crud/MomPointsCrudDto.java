@@ -1,4 +1,4 @@
-package com.example.MoM.dto;
+package com.example.MoM.dto.crud;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +11,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class LoginDto {
-
-	private String loginId;
-	private String password;
+public class MomPointsCrudDto {
+	
+	private int id;
+	private String info;
 
 }

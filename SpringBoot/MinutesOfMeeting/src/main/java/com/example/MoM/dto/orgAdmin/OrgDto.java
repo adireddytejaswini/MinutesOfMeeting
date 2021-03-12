@@ -1,4 +1,4 @@
-package com.example.MoM.dto;
+package com.example.MoM.dto.orgAdmin;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +11,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class MomPointsDto {
+public class OrgDto {
 	
-	private int id;
-	private String info;
+	private int organizationId;
+	private String organizationName;
 
 }

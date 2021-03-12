@@ -1,4 +1,4 @@
-package com.example.MoM.dto;
+package com.example.MoM.dto.crud;
 
 import java.util.Date;
 import java.util.List;
@@ -15,15 +15,15 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class MeetingDto {
+public class OrganizationMeetingCrudDto {
 
-	private int meetingId;
-	private String name;
+	private int id;
+	private String meetingName;
 	private String organizationName;
-	private MemberDto facilitator;
+	private OrganizationMemberCrudDto facilitator;
 	private Date startDateAndTime;
 	private Date endDateAndTime;
-	private List<MemberDto> attendees;
-	private List<MomHeadingDTO> headings;
+	private List<OrganizationMemberCrudDto> attendees;
+	private List<MomHeadingCrudDTO> headings;
 
 }

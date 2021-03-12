@@ -2,6 +2,7 @@ package com.example.MoM.entity;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,8 +22,8 @@ import lombok.ToString;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
-@Entity(name = "memeber")
+@ToString(exclude = {"organizationEntity","facilitatedMeetings","attendedMeetings"})
+@Entity(name = "member")
 public class OrganizationMemberEntity {
 
 	@Id
@@ -36,6 +37,7 @@ public class OrganizationMemberEntity {
 	private String organizationRole;
 	private String Address;
 	private String Gender;
+	@Column(unique = true)
 	private String loginId;
 	private String password;
 
